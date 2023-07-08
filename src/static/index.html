@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello World</title>
     <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+    <link rel="stylesheet" href="/public/tailwind.css" />
   </head>
-  <body>
-    <div hx-get="/hello" hx-trigger="click">Get Some HTML on click</div>
-    <p>
+  <body hx-boost="true">
+    <div hx-get="/hello" hx-trigger="revealed">Get Some HTML on click</div>
+    <p class="text-red-500">
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex commodi atque
       nulla. Labore praesentium fugit neque blanditiis aut, natus a laborum in
       error dolorum maxime voluptatum consequuntur! Maiores, a sapiente.
     </p>
+    <a href="/new-page">New page</a>
   </body>
 </html>

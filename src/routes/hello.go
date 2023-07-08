@@ -7,7 +7,7 @@ import (
 const ContentTypeHTML = "text/html; charset=utf-8"
 
 func HelloHandler(c *gin.Context) {
-	const html = `<h1>Hello, world!!!</h1>`
+	const html = `<h1 class="text-4xl font-extrabold text-gray-900">Hello, world!!!</h1>`
 
 	c.Data(200, ContentTypeHTML, []byte(html))
 }
